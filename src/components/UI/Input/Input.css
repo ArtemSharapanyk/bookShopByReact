@@ -1,0 +1,46 @@
+.Input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #7A7979;
+    position: relative;
+    width: 100%;
+    color: #ffffff;
+    padding-bottom: 10px !important; 
+}
+.Input.successValid{
+    border-bottom-color: green;
+}
+.Input.successValid ~ label{
+    color: green !important;
+}
+.Input.errorValid ~ label{
+    color: red !important;
+}
+.Input.errorValid{
+    border-bottom-color: red;
+}
+.inputControlBox{
+    position: relative;
+    margin-top: 40px;
+}
+
+.inputControlBox.inputAuth{
+    width: 100%;
+    padding-top: 10px;
+}
+.inputControlBox label{
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    color: #7a7979;  
+    transform: translate(0, -50%);
+    transition: .4s ease-in;
+}
+.errorBlock{
+    width: 50%;
+    border: 1px solid #fff;
+    padding: 10px 0;
+    margin:10px 0;
+    border-radius: 4px;
+    text-align: center;
+}

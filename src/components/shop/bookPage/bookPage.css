@@ -1,0 +1,45 @@
+.bookPage{
+    margin-top: 40px;
+    display: flex;
+    padding-bottom: 10vh;
+}
+.bookPage .col1{
+    width: 60%;
+}
+.bookPage .col1 .titleOfBook{
+    font-size: 2em;
+    font-weight: 700;
+}
+.bookPage .col1 .descriptionOfbook{
+    color: #7a7979;
+    margin-top: 30px;
+}
+.bookPage .col2 {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+}
+.bookPage .col2 {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+}
+.bookPage .col2 .imgOfBook {
+    width: 50%;
+    color: #7a7979;
+}
+.bookPage .col2 img{
+    width: 100%;
+    height: 300px;
+    background-color: #fff;
+}
+.bookPage .col2 .imgOfBook span{
+    color: #fff;
+}
+.bookPage .bookPageBtn{
+    position: fixed;
+    bottom: 5%;
+    right:  5%;
+    padding: 10px 40px;
+    font-size: 1.2em;
+}

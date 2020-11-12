@@ -1,0 +1,59 @@
+.menu{
+    width: 100%;
+    height: 100vh;
+    transition: .5s ease;
+    transition-delay: .2s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    transform: translateY(0)
+}
+.menu a{
+    color: #000000;
+    text-decoration: none;
+    position: relative;
+    padding: 10px 0;
+}
+.menu a::after, .menu a::before{
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background-color: #000;
+    position: absolute;
+    transition: .2s ease-in;
+}
+.menu a::after{
+    bottom: 0;
+    right: 0;
+}
+.menu a::before{
+    top: 0;
+    left: 0;
+}
+.menu a.activeMenuLink::after, .menu a.activeMenuLink::before{
+    width: 30%;
+    
+}
+
+.menu.close{
+    transform: translateY(-100%);
+}
+.menu ul {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+.menu ul li{
+    font-size: 1.5em
+}
+
+@media screen and (max-width: 500px){
+    .menu ul {
+        flex-direction: column;
+        height: 90%;
+    }
+}

@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+.app{
+    width: 100%;
+    padding: 10vh 0 0 0;
+}
+.app .title{
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+}

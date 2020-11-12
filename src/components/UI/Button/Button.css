@@ -1,0 +1,17 @@
+.Button{
+    padding: 5px 10px;
+    transition: .3s ease-in;
+    cursor: pointer;
+}
+.Button.submit{
+    border: 1px solid #fff;
+    color: #fff;
+}
+.Button.submit:hover{
+    background-color: #fff;
+    color: #000000;
+}
+.Button.disabledBtn{
+    pointer-events: none;
+    opacity: .4;
+}

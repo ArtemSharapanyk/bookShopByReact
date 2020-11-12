@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React   from 'react';
+import Layout  from './hoc/Layout/Layout';
+import Shop    from './containers/shop/Shop';
+import About   from './containers/about/about';   
+import Auth    from './containers/Auth/Auth';
+import {Route, Switch} from 'react-router-dom';
+import ErrorNotFound   from './components/errors/error404/Error404';
+import AdminPanel      from './containers/Admin/AdminPanel';
+import BookPage        from './components/shop/bookPage/bookPage';
 
-function App() {
+
+export default () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Layout>
+        <Switch>
+          <Route path='/' component={Shop} exact />
+          <Route path='/about' component={About} exact />
+          <Route path='/auth' component={Auth} exact />
+          <Route path='/adminPanel' component={AdminPanel} />
+          <Route path='/books/:id' component={BookPage} />
+          <Route component={ErrorNotFound} />
+        </Switch>
+      </Layout>
   );
 }
 
-export default App;
+

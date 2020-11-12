@@ -1,0 +1,28 @@
+.tagsOfBooks{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-top: 20px;
+}
+.tagsOfBooks .tag{
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    transition: .3s ease-in-out;
+}
+.tagsOfBooks .tag.activeTag{
+    background-color: #fff;
+    color: #000000;
+}
+.tagsOfBooks .tag:hover{
+    cursor: pointer;
+    background-color: #fff;
+    color: #000000;
+}
+
+@media screen and (max-width: 335px){
+    .tagsOfBooks .tag{
+        padding: 5px 10px;
+    }
+}

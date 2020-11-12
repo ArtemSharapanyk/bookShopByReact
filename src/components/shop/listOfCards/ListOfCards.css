@@ -1,0 +1,8 @@
+.shopCardBlock{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top:40px;
+    justify-content: center;
+    min-height: 100vh;
+}

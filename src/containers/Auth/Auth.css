@@ -1,0 +1,17 @@
+.Auth form {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    padding-bottom: 70px;
+    margin: 40px auto;
+}
+.Auth form .formBtn{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.Auth form .formBtn.formRegister{
+    left: 20%;
+}

@@ -1,0 +1,78 @@
+.hideBasket{
+    opacity: 0;
+    pointer-events: none;
+}
+.Basket{
+    transition: .4s ease-in;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    color: #000000;
+    overflow-y: scroll;
+    z-index: 1000;
+    padding-bottom: 10vh;
+    text-align: center;
+}
+.Basket ul{
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+}
+.BasketItem{
+    width: 30%;
+    min-width: 300px;
+    min-height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #000;
+    margin-top: 10px;
+    transition: .4s;
+    margin-left: 3%;
+    position: relative;
+    overflow: hidden;
+    transition: .4s ease-in;
+}
+.BasketItem:hover{
+    background-color: #000;
+    color: #ffffff;
+    cursor: pointer;
+}
+.hiddenBlock{
+    color: #fff;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    transform: translate(0, -100%);
+}
+.controlBlock{
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: .4s ease-in;
+}
+.BasketItem:hover > .controlBlock{
+    left: 0;
+}
+
+@media screen and (max-width: 1100px){
+    .BasketItem{
+        width: 40%;
+    }
+}
+@media screen and (max-width: 616px){
+    .BasketItem{
+        width: 80%;
+    }
+}
+
+
+

@@ -1,0 +1,49 @@
+.shopItemCard{
+    width: 27%;
+    padding: 20px;
+    border: 1px solid #fff;
+    min-width: 250px;
+    height: 250px;
+    position: relative;
+    list-style: none;
+    margin-top: 20px;
+    margin-right: 6%;
+}
+.shopItemCard .uiBox{
+   margin-top: 10px;
+}
+.shopItemCard .uiBox span{
+    color: #7A7979;   
+}
+.shopItemCard .uiBox span span{
+    color: #fff;   
+}
+.shopItemCard .uiBox .btnBlock{
+    bottom: 0;
+    position: absolute;   
+    display: flex;
+    left: 0;
+    height: 20%;
+    width: 100%;
+}
+.shopItemCard .uiBox .btnBlock .btnSeeBook{
+    width: 80%;
+    height: 100%;
+    background-color: #fff;
+    color: #000000;
+}
+
+.shopItemCard .uiBox .btnBlock .shopBasketBtn, .shopItemCard .uiBox .btnBlock .btnSeeBook{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 616px){
+    .shopItemCard{
+        width: 80%;
+    }
+}
+

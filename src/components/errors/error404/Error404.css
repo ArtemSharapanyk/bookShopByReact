@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+.error404Wrap{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000000;
+    background-color: #f0f0f0;
+    color: #000000;
+    overflow: hidden;
+}
+.errorInfo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+    border-bottom: 1px solid #7A7979;
+    font-weight: normal;
+
+}
+.errorInfo span{
+    font-weight: 700;
+    font-size: 2em;
+    margin-right: 2%;
+}
+.error404Wrap .someText{
+    position: absolute;
+    top:25%;
+    left: 4%;
+}
+.error404Wrap .someText span{
+    font-weight: 700;
+}
+.numberOfError{
+    font-family: 'Architects Daughter', cursive;
+    font-size: 25em;
+}
+.error404Wrap .homeBtn{
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    color: #000;
+    bottom: 5%;
+    left: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-left: 2px solid #000;
+    transition: .3s ease-in-out;
+}
+.error404Wrap .homeBtn:hover{
+    background-color: #000;
+    color: #ffffff;
+
+}

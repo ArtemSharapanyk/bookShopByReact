@@ -1,0 +1,9 @@
+.About .title{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+.About .description{
+    font-size: 1.2em;
+    color: #7A7979; 
+}
